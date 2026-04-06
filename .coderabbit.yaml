@@ -1,8 +1,12 @@
 # CodeRabbit Configuration
 language: en-US  # Language for reviews
 
-# Review settings
+# Review settings and Auto review settings
 reviews:
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    drafts: false
   profile: chill  # Options: chill, assertive
   high_level_summary: true
   high_level_summary_placeholder: '@coderabbitai summary'
@@ -20,11 +24,7 @@ reviews:
   path_filters: []  # Add glob patterns to include/exclude files
   path_instructions: []  # Add path-specific review instructions
   
-  # Auto review settings
-  auto_review:
-    enabled: true
-    auto_incremental_review: true
-    drafts: false
+  
     
   # Tool integrations
   tools:
